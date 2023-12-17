@@ -1,0 +1,603 @@
+
+---> What is React JS:
+imtiyaz
+
+---> Benifits of Using React:
+  
+
+
+---> npm and npx hum kab use kartey hai 
+   --> npm tab use kartey hai jab hamara project pahle se ready rahta hai. 
+   --> while npx hum use tab kartey hai jab new project setup cartey hai. 
+
+
+
+---> What is differenec b/w package.json and package-lock.json:-
+   --> package-lock.json app ki puri history sambhal kar rakhti hai sare module and Liberary.
+   --> package.json ye hamari application ki details rakhti hai.
+
+
+
+---> app.test.js isame unit test likhi jati hai testing team check karti hai bug wagairah.
+---> index.js react ki entry point hoti hai.
+
+
+
+---> What is component:
+   --> Component is a piece of code that can re-use again and again.
+   --> Example: function (Suppose, ek name ka function banaye then isko reuse kar saktey hai).
+   --> But more powerful than function (their own props, state).
+   --> Example of component: Header, Footer
+     
+
+
+---> What is JSX:
+  
+   --> JSX is javascript XML that means to write HTML Inside React.
+   --> Write HTML and javascript Together.
+   --> Use Like HTML or XML tags.
+   --> JSX stands for JavaScript XML. JSX allows us to write HTML in React. JSX makes it 
+       easier to write and add HTML in React.
+
+
+
+---> What is State(Function Component):
+     State is object hota hai jisme hum data ko store karte hai same as varibale
+
+
+
+---> Use of State:
+     Jab bhi hum variable use kartey hai toh hamara component update nahi hota hai
+     and jab hum state use karte hai toh hamara component update or re-render hota hai.
+     State hamara ek container hai jisme hum data ko store kartey hai simple.
+
+
+---> Define of State: 
+     State is object hota hai jisme hum data ko store karte same as varibale
+
+   
+---> How State work:
+
+
+---> Interview Question:
+
+
+---> State in Class Component:
+    1. Make Class Component
+    2. What is State: State is a Data Container Hota hai jisme name value etc store kar saktye hai
+    3. Define State
+    4. update state with a Button Click
+
+
+---> What is Props In Functional-Component:(v.v.i)
+  -> Jaise hum kisi function ke under parameter pass kartey thik usi tarah hum component 
+     ke under hum props pass kartey hai.
+  -> props just like a parameter.
+  -> props ka pura matlab Propertie hota hai.
+
+
+
+  -> In React, props (short for "properties") are a way to pass data from a parent component to  child component. Props are an object that contains a set of values that are passed to a component as attributes when it is rendered. The child component can then access these values through the props object.
+
+
+---> What is Props In Class-Component:
+    -> Jab ek component se kisi dusre Component mein data ko transfer karana hota hai then hum   
+       props ka use kartey hai.
+   
+   -> Props just like a parameter.
+
+---> JSX ko humlog Bina React ke bhi Use kar saktey by making .jsx extension
+
+
+
+---> Life Cycle Method with Class Component in React:
+   --> Types of Life Cycle Method
+       1. Mounting
+       2. Updating
+       3. Unmounting
+          
+
+---> Life cycle Method kab apply hota hai 
+   --> When Component is Loaded.
+   --> when component is updated with props and state.
+   --> When Componentis removed means hide ho jata tab.
+
+
+---> Construtor
+     Jab hum class ko call kartey then constructor apne aap hi call ho jata hai
+
+
+---> What is Super Method:
+     Parent Class ko call karne ke liye Super method use kartey hai.
+
+
+
+---> What is Render() Method:
+    1. render() Method means Uplod karna
+    2. Execute Karke Represent karna.
+    3. render() Method only we use in Class Component.
+    4. render() is a life Cycle Method.
+
+
+
+---> Why we use Rendrer() Method:
+
+
+
+---> What is componentDidMount:
+     kisi chij ko load kar rahe hai or Load ho raha hai toh Mounting.
+     When our Component Load or Render then called componentDidMount().
+ 
+ --> Use of componentDidMount:
+    --> Iska use humlog tab kartey hai jab hum API Call kartey hai.
+
+    --> componentDidMount tab chalta hai jab hamara HTML files ready ho chuka hoga.
+
+    --> koee bhi aesa operation jisme humko hide show karwana ho toh hum componentDidMount ke under kartey hai.
+
+
+   --> koee bhi aesa operation jo hamare HTML par depend ho toh componentDidMount ke under kartey hai.
+
+   --> iska matlab hamara HTML ready hi nhi hai and API call kar diye then code kahi na kahi break ho sakta hai so we use componentDidMount method.
+
+
+   --> Best Examaple of componentDidMount API call karna
+      jab tak hamara HTML DOM sab Load ho chuka hoga.
+
+   --> Did means ho chuka 
+   
+   --> API ko baar baar toh call karna nahi isliye componentDidMount method use kartey hai single time upload hota hai.
+  
+
+
+---> What is componentDidUpdte:
+     1. when component is update that's called componentDidUpdted.
+     2. componentDidUpdte state or props ke update ho par render hota hai.
+     3. Suppose when click on button then print on console.
+
+
+---> What is componentWillMount:
+     1. Jab bhi component DOM se remove hoga then componentWillMount call hoga.
+     2. Profits: Suppose API call kar rahe hai and immediately component ko remove karna hai toh us request ko cancel kar saktey hai.
+     3. koee data loading ho rahi hai usko cancel kar saktey hai.
+     4. koee function bhi call kar saktey hai.
+
+
+---> What is ComponenetUpdate:
+     1. By default ye component ko rendering nahi hone deta hai that means ye false return karta h.
+     2. by default false return karta ek tarah se block kar deta hai.
+     3. Iska mainly use specific condtion ke upar stop kar saktey hai.
+     4. Ex: if(this.state.counter > 10){ then do something}
+     5. Aese use karne se application ki performance increase hogi.
+     5. jab kisi component ko render karna ho ya nahi karna ho then use it.
+
+
+
+<-------------------------------> Hooks in React Js (V.V.I) <----------------------------->
+
+
+1. What is Hooks in React Js:
+   1. It allow you to use state and other React features without writting a class.
+
+   1. Jab hum class component use kartey hai toh uske under life cycle method ke in-built 
+      feature hotey hai like state, life cycle, pure component but Functional component ke under nahi hoti hai usi feature ko use karne ke liye humlog Hooks ka use kartey hai.
+  
+   2. With Hooks, we can use class component feature in Functional component such as state,
+      life cycle, pure component, etc.
+   
+   3. Hooks are a new features in React 16.8. They let you use state and other 
+      React features without writing a class.
+
+
+1. What is useState in Hooks:
+   useState is function which returns a Array with two itmes first is current Data and Second
+   is updated Data and jab bhi useState koee value put karengey then called INITIAL DATA.
+
+
+
+2. What is useEffect Hook in React Js:
+   1. This is Similar to componentDidMount and componentDidUpdate:
+
+   2. Hooks are the Funtion which "Hook into"  React State and lifecycle features from function  com
+
+   3. It does not work inside classes.
+
+   4. Hooks always be used at the top level of the React function. l
+
+   2. If you’re familiar with React class lifecycle methods, you can think of useEffect
+      Hook as componentDidMount, componentDidUpdate, and componentWillUnmount combined.
+
+   3. useEffect Hook are combined componentDidMount, componentDidUpdate and   componentWillMount      
+ 
+
+---> Style type in React Js:
+     1. Use the Normal Stylesheet (External CSS).
+     2. Style with variable or inline Style (Inline CSS).
+     3. CSS with Module.   
+
+
+
+2. What is React Fragment:
+   1. Fragments is a list of children without adding extra nodes to the DOM.
+   2. A common pattern in React is for a component to return multiple elements.
+   3. Fragment ko as Wrapper use kartey hai.
+
+   --> React Fragment ek pattern hota hai jo multiple elements or multiple component ko
+       Handle Karne ke liye.
+
+
+3. What is Lifting State Up:
+   1.jab hum child Componenet se Parent component data send kartey hai then called Lifting state up.
+   
+   2. In React, sharing state is accomplished by moving it up to the closest common ancestor of the components that need it. This is called “lifting state up”
+
+   3. send the Data Child to Parent Componenet that's called Lifting State Up.
+
+   4. Fragment ke under className nahi bana saktey hai only key le saktey hai.
+
+
+
+4. Pure Component:
+   pure component ek features hota hai hum just react se import karna hota hai then use kartey hai.
+
+
+
+5. What is useMemo Hook in React JS:
+   1. Ye application ki performanceko enhance karta hai.
+   2. In class Componenet ke under PureComponents use kartey hai same in Functional 
+   component ke under humlog useMemo use kartey hai.
+
+   3. Dono ka same kaam hai enahance karna application ko.
+
+   1. The React useMemo Hook returns a memoized value.
+   2. Think of memoization as caching a value so that it does not need to be recalculated.
+   3. The useMemo Hook only runs when one of its dependencies update.
+   4. This can improve performance.
+   5. The useMemo and useCallback Hooks are similar.
+
+
+
+6. What is Ref in React Js (Class Componenet):
+   1. Ref Directly Dom ko manipulate karta hai jabardasti kisi ka color add kar diya
+      kisi elements ka property get karliya.
+
+   2. Example form mein value get karni hai validation bhi lagani hai colors bhi change 
+    karna hai, focus bhi karni ho then iss case mein we can use.
+
+   
+   3.Refs provide a way to access DOM nodes or React elements created in the render method.
+
+   4. When to Use Refs
+      There are a few good use cases for refs:
+      1. Managing focus, text selection, color apply or media playback.
+      2. Triggering imperative animations.
+      3. Integrating with third-party DOM libraries.
+
+
+
+
+7. What is useRef Hook in Functional Componenet:
+   1. useRef is a Hook jisko hum only we use inside the Functional Componenet.
+   2. jab hame style change karna ho, value get karna ho ye sabko handle karne ke liye we use useRef.
+   3. ref property hoti hai get karne ke liye.
+   4. It can be used to access a DOM element directly.
+   5. The useRef Hook allows you to persist values between renders.
+   6. It can be used to store a mutable value that does not cause a re-render when updated.
+
+
+
+8. forwardRef in Hook in Functional Componenet:
+   1. Suppose ek input filed child component mein hai and ek input filed parent component mein
+      hai then mujhe DOM mein change karna then we will be use forwardRef
+     
+   2. React.forwardRef accepts a render function that receives props and ref parameters and 
+      returns a React node.
+  
+
+
+
+---> what is Controlled Component in React JS:
+      In React, Controlled Components are those in which form's data is  handled by the component's state.
+
+      It takes its current value through props and makes changes through callbacks like onClick,onChange,
+
+
+
+----> what is UnControlled Component in React JS
+      1. Uncontrolled Components are those component jiske under input filed ho and wo input
+         filed React ke state ke through controlled nhi honi chahiye. 
+      
+      2. ya toh ye javascript ke through controlled ho rahi hogi ya toh ref ke through.
+
+      3. Uncontrolled Components are the components that are not controlled by the React state
+         and they are only handled by the DOM.
+
+
+----> What is HOC(Higher Order Component):
+      1. Higher order component are those Componenet who takes component as a input and  give 
+         output as component that's called Higher Order Componenet.
+      
+      2. A higher-order component (HOC) is an advanced technique in React for reusing   
+         component logic. 
+
+      3. A higher-order component is a function that takes a component and returns a new  
+         component.    
+
+
+
+
+<------------------------------> React Router <------------------------------------> 
+
+1. 6.2.2 --> 6 major update --> 2 --> minor updates ----> 2 patch
+
+
+1. What is Params:
+
+
+2. Active Link in Navbar:
+   1.Active Link with Class: ans --> (.active{ color: black}) // This simple
+   2.Active Link with Style:
+   <NavLink style ={({isActive} => {return {colr:isActive?'green':'red'}})}>Home<NavLink/>
+  
+   3. Navlink mein by default active class hoti hai so we can haldle easily.
+
+
+
+3. What is Nested Routing:
+   1. Ek Rounting banakar useke under ek routing define karna tha's called nested routing.
+
+
+
+4. What is useLocation React Router Hook:
+   1. how to pass state inside the useLocation.
+   2. what is the Hook of useLocation.
+   3. what is hash.
+   4. what is params.
+   5. How to pass params.
+
+   --> If directly pages ko refresh kartey hai toh key :"default" milta hai.
+   --> And If hum ek page se kisi dusre page par jatey hai unique key milta hai automatically.
+   --> And If we pass custom key then custom key hi show hoga.
+
+
+5. What is Protected Route:
+   1. Protected route hum log tab lagatey hai jab kuchh hide karni ho data mainly for during Authen..
+
+
+
+
+<---------------------> API In REACT <------------------------>
+1. API Call in React:
+   1. Get method : Jab data ko Show karna hota hai then we use post method.
+   2. post method: Jab data ko store karna hota hai Database ke under then we use post method.
+   3. put Method: Jab data ko update karna hota hai then we use put method.
+   4. delete method : jab delete karna hota hai then we use delete method.
+   5. patch method : ye instruction hoti hai data ko modify karne ke liye
+
+   --> put mathod ka use kartey hai data ko send krne ke liye and uske under data ko 
+      modify karne ke liye.
+
+   --> Patch method just ek instruction hoti hai data ko modify karne ke liye.
+
+
+
+
+2. What is postman:
+   Postman is tool which use for testing the API Call
+
+   1. 
+
+   --> pre-faleed check karti hai ki hamara server sahi se cal raha hai ki nhi 
+
+3. How To Start CRUD Operation With Fake API:
+   1. First create Fake API --> goto on --> https://www.npmjs.com/package/json-server
+   2. Then Craete a folder in system 
+   3. open in Vs Code terminal run commmand --> npx install json-server
+   4. then run another command for craete JSON File and start for server ---> npx json-server --watch db.json
+
+   5. then open user hostlink 
+
+<-------------------------------> React Advanced Topic <---------------------------->
+
+1. Context API in React:
+   1.Context provides a way to pass data through the component tree without having to pass props
+    down manually at every level.
+   
+   1. Suppose we component tree and i want to share data from one component to other component
+      then we can easily share the data using Context. but in nomal way pahle humko parent component mein pass karna hota then phir parent component se uss child component mein
+      mein Data share kartey.
+
+      But by using Context API we can easily direct share data from one to other component.
+
+
+
+ ---> Inside Context API Two component are important
+      1. Provider: Provider Data ko set karta hai ki kya kya Data set Karta hai.
+      2. consumer: Comsumers means uss Data ko use karna
+      
+
+
+
+
+
+<------------------------> React Advanced Topic <-------------------------------> 
+
+
+
+
+
+<--------------------------> Redux in React JS <-------------------------------->
+
+1. What is Redux?
+   1. Redux is an open-source JavaScript library which is used to manage application state.
+
+   1. Redux is a pattern and library for managing and updating application state, using events call "action"
+      
+   2. React uses Redux for building the user interface(UI). It was first introduced by Dan Abramov 
+      and Andrew Clark in 2015.
+
+   3. It allows React components to read data from a Redux Store, and dispatch Actions to the  Store
+      to update data. 
+   
+   4. Redux itself is a standalone library that can be used with any UI layer or framework.
+   5. React redux is an advanced state management library for React.
+
+   --> Redux is just Store or Container where we can store your whole application data.
+   --> So we call it to state management.
+   --> it dosen't belongs to the component state
+
+   --> Mainly uses of Redux ek component se kisi other Componenet se communicate karane ke liye(VVI). 
+    
+
+
+2. Why we need Redux?
+   To mannage state
+
+3. How Redux Work? 
+
+
+----> File Structures of React Redux:
+      Componenets
+      Container
+      Services: 1. actions
+                2. reducers
+                3. constants: contants dono filo ko batayega ki action se data jab reducers mein
+                              jayega toh koun sa data koun se function mein jana chahiye. 
+
+           
+---> Data in React always flow from the parent to child component which makes it unidirectional         
+        
+             
+1. What is Action:
+  1. Action are plain JavaScript object that have a type of filed.
+  2. Action only tel what to do, but they dont't tell how to do.
+  Example : return {
+   type: 'Increment',
+   payload: num;
+  }
+
+
+2. What is Reducer:
+   Reducers are function that take the current state and function as a argument,
+   and return a new state result.
+
+
+3. What is Store:
+   1. The Redux store brings Together the state, action and reducers that make up your App.
+   2. It's important to note that you will only have a single store in a redux application.
+   3. Every Redux store has a single root reducers function.
+
+
+
+
+------> What is Spread Operator:
+        const fullName = ["Md", "imtiyaz"];
+        const biodata = [1, ...fullName, "sonu", "monu"] 
+        
+        console.log(fullName); // output --> ['Md', 'imtiyaz']
+        console.log(biodata) // Output ---> [1, 'Md', 'imtiyaz', 'sonu', 'monu']
+
+
+
+<----------------------------> BootStrap in React <------------------------------------>
+
+----> How to use BootStrap in our React Project:
+     Step 1: npm install bootstrap
+     Step 2: import 'bootstrap/dist/css/bootstrap.min.css';
+     Step 3: Then Use BootStrap any Componenet.
+
+<-----------------------------> BootStrap in React <------------------------------------>
+
+
+
+
+1. What is Context API in React (V.V.I):
+   1. React context API allows us to easily access data at different level of the component
+      tree without passing prop to every level. 
+
+   2. The React Context API is a component structure, which allows us to share data across 
+      all levels of the Application.
+   
+   
+   3. The main aim of Context API is to solve the problem of prop drilling (also called    
+     "Threading"). The Context API in React are given below. 
+
+
+---> There are Basically three Steps for using React Context API:
+     1. createContext()  = They are Basically create context Object for passing tha data
+     2. Provider         = provider means people can use
+     3. Consumer         = Agar koee user Data provide karwa rahe hai toh then for use consumer
+
+
+
+
+2. What is useContext Hooks in React (V.V.I):
+   1. useContext” hook is a way to accessed Data throughout the component hierarchy without  
+      passing the props down manually to each level.
+
+   2. React useContext is a way to manage state globally.
+   
+
+3. What is useEffect Hooks in React:
+   1. The useEffect Hook allows you to perform side effects in our components.
+   2. Some examples of side effects are: fetching data, directly updating the DOM, and timers.
+   3. useEffect accepts two arguments. The second argument is optional.
+      1. useEffect(<function>, <dependency>)
+
+
+
+<=========================> React Router Start By Imtiyaz <=============================>
+1. What id difference between Link and NavLink:
+   Link are work same as these anchor tag but we can't add className with Link in React Js.
+   But with NavLink we can add className in React Js simple
+
+
+2. What is useParams Hook in React Router:
+   The useParams hook returns an object of key/value pairs of the dynamic params from the current URL that were matched by the <Route path>. Child routes inherit all params from their parent routes.
+
+
+3. What is useLocation Hook in React Router:
+  1. useLocation hook returns the current location object. This can be useful if you'd like to  
+     perform some side effect whenever the current location changes.
+     
+  2. useLocation ka humlog mostly use kartey hai current path ko find karne ke liye. Example
+     http://localhost:3000/User/imtiyaz/developer then result will comes --->
+     {My Current Loaction is /User/imtiyaz/developer}
+
+
+4. What is useNavigate Hook in React Router:
+   1. useHistory: This is one of the most popular hooks provided by React Router.
+   2. It give me access the history instance used by React Router.
+   3. Using the useNavigate instance we can redirect users to another page.
+   4. In react-router-dom v6 useHistory() is replaced by useNavigate().
+   5. This is useful any time you need to navigate imperatively, e.g. after the user submits a 
+      form or clicks on a button.
+
+
+
+<============================> React Router Ended By Imtiyaz <============================>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2 string ko jurna concatination kah lati hai.
